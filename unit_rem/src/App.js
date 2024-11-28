@@ -10,7 +10,7 @@ function valuetext(value) {
 function App() {
   const [fontSize, setFontSize] = useState(16);
   const [fontSizeChildren, setFontSizeChildren] = useState(1);
-  const [fontSizeParent, setFontSizeParent] = useState(1);
+  const [fontSizeParent, setFontSizeParent] = useState(1.4);
 
   //Mise à jour de la taille de la police générale
   useEffect(() => {   
