@@ -41,11 +41,11 @@ function App() {
 
       <div className="parent" style={{ fontSize: `${fontSizeParent}rem` }}>
         <h2 className="enfant" style={{ fontSize: `${fontSizeParent}rem` }}>Texte de la div parent ({fontSizeParent}rem)</h2>
-        <p className='explication'> ({fontSizeParent} x la taille de la police générale de la page  ou {fontSizeParent * fontSize}px )</p>
+        <p className='explication'> ({fontSizeParent} x la taille de la police générale de la page  = {fontSizeParent * fontSize}px )</p>
 
         <div className='div_enfant'>
           <h2 className="enfant" style={{ fontSize: `${fontSizeChildren}rem` }}>Texte de la div enfant ({fontSizeChildren}rem)</h2>        
-            <p className='explication'> ({fontSizeChildren} x la taille de la police générale de la page  ou {fontSizeChildren * fontSize}px )</p>
+            <p className='explication'> ({fontSizeChildren} x la taille de la police générale de la page  = {fontSizeChildren * fontSize}px )</p>
         </div>
 
       </div>
@@ -59,10 +59,10 @@ function App() {
             color='red'
             onChange={handleSliderChange}
             getAriaValueText={valuetext}
-            step={2}
+            step={1}
             marks
-            min={11}
-            max={21}
+            min={15}
+            max={18}
             valueLabelDisplay="auto"
             />
         </div>
